@@ -87,7 +87,7 @@ class ProductsList {
 	}
 
 	_filter(data) {
-		if (!data) return;
+
 		const regexp = new RegExp(data, 'i');
 		this.allProducts.forEach(elem => {
 			let isShow = regexp.test(elem.product_name);
