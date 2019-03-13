@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<title>GB shop</title>
+</head>
+<body>
+	<div id="app">
+		<div class="wrapper">
+		
+			<header>
+	            <form class="search-form">
+	                <input type="text" class="search-field" v-model="filterData" @submit="filter">
+	                <button class="btn-search" type="submit" @click="filter($event)">
+	                    <i class="fa fa-search"></i>
+	                </button>
+	            </form>
+				<div class="cart-wrapper">
+					<button @click="cartShow = !cartShow" class="cart">Корзина</button>
+					<div v-if="cartShow" class="cart-content">
+
+						<div class="cart-item" v-for="product of cartList" :key="product.id_product">
+							<div class="cart-item__img">
+								<img :src="product.img" alt="товар">		
+							</div>
+							<div class="cart-item__caption">
+								<p>{{product.product_name}}</p>
+								<p class="cart-product-data">{{product.quantity}} x {{product.price}} руб</p>
+								<i class="fa fa-times-circle remove" aria-hidden="true" @click="remProduct(product)"></i>
+							</div>
+						</div>
+						
+						<div class="cart-result" v-html="cartRevew()"></div>
+					</div>
+				</div>
+			</header>	
+
+			<div class="container">
+
+	    		<div class="item"  v-for="product of products" 
+	    		:key="product.id_product" v-if="product.filter">
+					<div class="img-wrap">
+						<img :src="product.img" alt="фото товара" >
+					</div>
+					<div class="item-title">{{product.product_name}}</div>
+					<div class="item-title"><em>{{product.price}} руб</em></div>
+					<button class="add" @click="addProduct(product)">Добавить</button>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<script src="js/vue.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
