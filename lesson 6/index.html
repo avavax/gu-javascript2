@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<title>GB shop</title>
+</head>
+<body>
+	<div id="app">
+		<div class="wrapper">
+
+			<header>
+				<app-search></app-search>
+	            <app-cart ref="appCart"></app-cart>
+			</header>	
+
+			<app-products ref="appProducts"></app-products>
+
+		</div>
+	</div>
+	<script src="js/vue.js"></script>
+	
+	<script src="js/components/CartComp.js"></script>
+	<script src="js/components/SearchComp.js"></script>
+	<script src="js/components/ProductComp.js"></script>
+	<script src="js/components/ErrorComp.js"></script>
+	<script src="js/core.js"></script>
+</body>
+</html>
