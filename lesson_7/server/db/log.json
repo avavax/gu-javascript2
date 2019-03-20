@@ -1,0 +1,37 @@
+[
+    {
+        "action": "add",
+        "product_name": "Фитнес-браслет Xiaomi",
+        "time": "Tuesday, March 19, 2019 8:52 PM"
+    },
+    {
+        "action": "del",
+        "product_name": "Ноутбук",
+        "time": "Tuesday, March 19, 2019 8:52 PM"
+    },
+    {
+        "action": "del",
+        "product_name": "Фитнес-браслет Xiaomi",
+        "time": "Tuesday, March 19, 2019 8:52 PM"
+    },
+    {
+        "action": "add",
+        "product_name": "Экшн-камера Motorola VERVECAM",
+        "time": "Tuesday, March 19, 2019 8:52 PM"
+    },
+    {
+        "action": "change",
+        "product_name": "Мышка",
+        "time": "Tuesday, March 19, 2019 8:52 PM"
+    },
+    {
+        "action": "del",
+        "product_name": "Мышка",
+        "time": "Tuesday, March 19, 2019 9:22 PM"
+    },
+    {
+        "action": "del",
+        "product_name": "Экшн-камера Motorola VERVECAM",
+        "time": "Tuesday, March 19, 2019 9:22 PM"
+    }
+]

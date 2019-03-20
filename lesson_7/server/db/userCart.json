@@ -1,0 +1,22 @@
+{
+    "amount": 46600,
+    "countGoods": 2,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 456,
+            "product_name": "Мышка",
+            "price": 1000,
+            "img": "img/default-placeholder.png",
+            "filter": true
+        },
+        {
+            "quantity": 1,
+            "id_product": 123,
+            "product_name": "Ноутбук",
+            "price": 45600,
+            "img": "img/default-placeholder.png",
+            "filter": true
+        }
+    ]
+}
